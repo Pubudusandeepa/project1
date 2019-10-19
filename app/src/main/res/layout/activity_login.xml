@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:alpha=".6"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/colorPrimary"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:id="@+id/txt"
+        android:textSize="34dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
+        android:background = "@drawable/input_shapes"
+        android:padding="15dp"
+        android:hint="Username.."
+        android:textColorHint="@color/colorAccent"
+        android:id="@+id/login_username"
+        android:singleLine="true"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_username"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
+        android:background = "@drawable/input_shapes"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:hint="Password..."
+        android:textColorHint="@color/colorAccent"
+        android:id="@+id/login_password"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/login_btn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape_singup"
+        android:text="SignUp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/btnToSingUp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnToSingUp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/divider"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="OR"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="6dp"
+            android:id="@+id/divider_txt"
+            />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_space_phone"
+        android:text="Login FaceBook"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/login_phone"
+        />
+
+</RelativeLayout>
